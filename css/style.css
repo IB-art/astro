@@ -1,0 +1,921 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+button {
+  outline: none;
+  border-style: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  background: transparent;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* Блок 1. Баннер статический */
+/* banner */
+.banner {
+  background-image: url(../images/banner-bg-4.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: 85vh;
+}
+.banner__inner {
+  padding-top: 120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner__inner img {
+  width: 244px;
+  height: 88px;
+}
+
+.banner-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+h1 {
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(
+    0deg,
+    #cbd088,
+    #78cafd,
+    #e199a8,
+    #fee7a8,
+    #fcfcec,
+    #fcfcec,
+    #fcfcec,
+    #fcfcec
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 7px;
+  z-index: 4;
+}
+
+.banner-title p {
+  font-family: "Montserrat-ExtraBold", sans-serif;
+  font-size: 52px;
+  font-weight: 800;
+  color: #070707;
+  position: absolute;
+  text-shadow: 3px 3px 7px rgb(18 18 18);
+  /* top: 0; */
+}
+
+.banner__text {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 24px;
+  line-height: 140%;
+  color: #b1a61d;
+  text-shadow: 1px 1px 0px rgb(87 0 0 / 88%);
+  max-width: 670px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Блок 2. Подборка экспертов */
+/* consultation */
+.consultation {
+  padding: 50px 0 100px;
+  position: relative;
+}
+
+.consultation::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  background: linear-gradient(360deg, #fff 0%, #dbdcca 45%);
+  top: 0;
+}
+
+.consultation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  background: linear-gradient(180deg, #fff 4%, #dbdcca 50%);
+  bottom: 0;
+}
+
+.consultation__inner {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 44px;
+  text-shadow: 2px 2px 1px rgb(151 143 102 / 88%);
+}
+
+p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.consultation__ac {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 20px;
+  margin: 12px 0 14px;
+  color: #c22251;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.consultation__ac::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #c22251;
+  bottom: 0;
+}
+
+/* Карусель */
+/* slider */
+.slider {
+  position: relative;
+  padding-top: 70px;
+  z-index: 4;
+}
+
+.slider::before {
+  content: "";
+  background-image: url(../images/slider/slider-bg-1.png);
+  max-width: 1356px;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.slider__item {
+  max-width: 1290px;
+  width: 100%;
+  padding: 0 60px;
+  margin: 0 auto;
+  display: none;
+}
+
+.slider__item-active {
+  display: block;
+}
+
+.arrow-left {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.arrow-right {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider__card {
+  max-width: 343px;
+  width: 100%;
+  height: 600px;
+  background-color: #000;
+  border-radius: 28px;
+  position: relative;
+  margin: 0 35px;
+}
+
+.slider__card-img {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-img {
+  background-image: linear-gradient(180deg, rgba(15, 15, 15, 0) 20%, #000 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.slider__card-img img {
+  max-width: 343px;
+  width: 100%;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+
+.card {
+  position: absolute;
+  padding: 16px;
+  bottom: 0;
+}
+
+.card__title {
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.card__box {
+  margin: 20px 0 28px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
+}
+
+.card__text {
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #29292b;
+  padding: 10px 14px 10px 42px;
+  border-radius: 30px;
+}
+
+.card__text-astr,
+.card__text-num,
+.card__text-exp,
+.card__text-cons {
+  position: relative;
+}
+
+.card__text::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 2px;
+}
+.card__text-astr::before {
+  background-image: url(../images/slider/astr.png);
+}
+.card__text-num::before {
+  background-image: url(../images/slider/num.png);
+}
+.card__text-exp::before {
+  background-image: url(../images/slider/exp.png);
+}
+.card__text-cons::before {
+  background-image: url(../images/slider/cons.png);
+}
+
+.card__promo {
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border: 1px dashed #fff;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.card__promo-text {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 8px 0 28px;
+  color: #fff;
+  opacity: 60%;
+  text-align: center;
+}
+
+.card__btn {
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-radius: 16px;
+  height: 45px;
+  text-shadow: 3px 3px 4px rgb(0 0 0);
+  background: linear-gradient(
+    90deg,
+    #c1ad64 1.88%,
+    #a98343 35.61%,
+    #a27c3d 54.52%,
+    #c4b067 87.74%
+  );
+  cursor: pointer;
+}
+
+/* Блок 3. Розыгрыш */
+/* lottery */
+.lottery {
+  padding: 50px 0;
+  background-image: url(../images/lotter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: auto;
+}
+
+.lottery__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lottery__info {
+  max-width: 560px;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #fff;
+  text-shadow: 3px 3px 3px rgb(87 0 0 / 88%);
+  margin-bottom: 20px;
+}
+
+.lottery__info p,
+.referral__inner p {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #fff;
+  margin-bottom: 12px;
+  text-shadow: 3px 3px 4px rgb(0 0 0);
+}
+
+.lottery__info p span {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #fff;
+}
+
+.lottery__mas {
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #fff;
+  margin-bottom: 40px;
+  position: relative;
+  text-shadow: 3px 3px 4px rgb(0 0 0);
+}
+
+.lottery__mas::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  bottom: 3px;
+}
+
+.lottery__btn,
+.referral__btn {
+  padding: 14px;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 37px;
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 18px 0px #000000;
+  text-shadow: 3px 3px 4px rgb(0 0 0);
+  background: linear-gradient(
+    90deg,
+    #c1ad64 1.88%,
+    #a98343 35.61%,
+    #a27c3d 54.52%,
+    #c4b067 87.74%
+  );
+}
+
+.lottery__item {
+  width: 420px;
+  height: 420px;
+  background: linear-gradient(180deg, #01360c 0%, #a57f40 100%);
+  box-shadow: -6px 0px 18px 0px #000000;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.lottery__item img {
+  width: 185px;
+  height: 128px;
+}
+
+.lottery__item-minuts {
+  font-family: "Montserrat-SemiBold";
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.lottery__item-text {
+  font-family: "Montserrat-Regular";
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 60%;
+}
+
+/* Блок 4. Подарки */
+/* present */
+.present {
+  padding: 50px 0 0;
+  background: linear-gradient(360deg, #fff 57%, #dbdcca 70%);
+}
+
+.present__inner {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tabs {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cccfa3;
+  height: 54px;
+  border-radius: 37px;
+}
+
+.tabs span {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  height: 54px;
+  width: 100%;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tabs span:hover {
+  color: #ab8400;
+}
+.tabs .tab.active:hover {
+  color: #fff;
+}
+
+.tab.active {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(
+    90deg,
+    #c1ad64 1.88%,
+    #a98343 35.61%,
+    #a27c3d 54.52%,
+    #c4b067 87.74%
+  );
+  height: 54px;
+  border-radius: 37px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.tab-item {
+  display: none;
+}
+
+.tab-item.active-tab {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-item__content {
+  position: relative;
+  max-width: 265px;
+  width: 100%;
+  height: 409px;
+}
+
+.tab-item__func .tab-item__content {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.6s;
+  max-width: 265px;
+  width: 100%;
+  height: 409px;
+  cursor: pointer;
+}
+
+.tab-item__func .tab-item__content--active {
+  transform: rotateY(180deg);
+}
+
+/* лицевая сторона карты */
+/* tab__box-front */
+.tab__box-front {
+  transform: rotateY(0);
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+.tab__box-front img {
+  border-radius: 20px;
+  position: relative;
+}
+
+.tab-item .tab-item__content {
+  position: relative;
+}
+
+.tab-item .tab-item__content::after {
+  content: "";
+  background: rgb(10 10 10 / 57%);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 265px;
+  width: 100%;
+  height: 409px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 27px;
+}
+
+.tab-item__func .tab-item__content::after {
+  content: "";
+  display: none;
+}
+
+/* обратная сторона карты */
+/* tab__box-back */
+.tab__box-back {
+  border: 1px solid #000;
+  max-width: 265px;
+  width: 100%;
+  height: 409px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  background-color: #fff;
+}
+
+.tab__box-title {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  text-shadow: 3px 3px 4px rgb(201 191 191);
+}
+
+.tab__box-text {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  color: #333333;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tab__box-back img {
+  max-width: 265px;
+  width: 100%;
+  height: 166px;
+}
+
+.tab__box-back a {
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  width: 90%;
+  padding: 16px 0;
+  color: #fff;
+  box-shadow: 2px 2px 6px 0px #201414bd;
+  text-shadow: 3px 3px 4px rgb(0 0 0);
+  background: linear-gradient(
+    90deg,
+    #c1ad64 1.88%,
+    #a98343 35.61%,
+    #a27c3d 54.52%,
+    #c4b067 87.74%
+  );
+
+  border-radius: 16px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Блок 5. Соцсети */
+/* social */
+.social {
+  background: linear-gradient(180deg, #fff 4%, #dbdcca 35%);
+  padding: 50px 0;
+}
+
+.social__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social__item {
+  max-width: 680px;
+  width: 100%;
+}
+
+.social__box {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social__telegram,
+.social__login {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0px 4px 18px 0px #000000;
+  text-shadow: 3px 3px 4px rgb(0 0 0);
+  background: linear-gradient(
+    90deg,
+    #c1ad64 1.88%,
+    #a98343 35.61%,
+    #a27c3d 54.52%,
+    #c4b067 87.74%
+  );
+  cursor: pointer;
+  border-radius: 37px;
+  width: 50%;
+  text-align: center;
+  padding: 14px 0;
+}
+
+/* Блок 6. Рефералка */
+/* referral */
+.referral {
+  padding: 86px 0;
+  background-image: url(../images/lotter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.referral__inner {
+  margin: 0 auto;
+}
+
+.referral__inner p {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 865px;
+  width: 100%;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 7;
+}
+
+/* Стили для содержания модального окна */
+.modal-content {
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+  position: relative;
+}
+
+/* Стили для кнопки закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  right: 7px;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+/* Стили для блокировки скроллинга на странице, когда открыто модальное окно */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* форма в модальном окне */
+.form-container {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 26px;
+  color: #0e315e;
+  margin-bottom: 10px;
+}
+
+.form__line {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__line + .form__line {
+  margin-top: 20px;
+}
+
+label {
+  text-align: left;
+  width: 120px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="email"] {
+  width: 60%;
+  padding: 10px;
+  border-radius: 7px;
+  margin-left: 20px;
+  outline: none;
+  border-color: rgb(185 122 17) !important;
+}
+
+/* input:invalid {
+  border-color: rgb(207, 177, 9);
+} */
+
+button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: #191919;
+  width: 158px;
+  height: 36px;
+  background: linear-gradient(
+    90deg,
+    #c1ad64 1.88%,
+    #a98343 35.61%,
+    #a27c3d 54.52%,
+    #c4b067 87.74%
+  );
+  box-shadow: 7px 7px 10px #000000;
+  outline: none;
+  border-style: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+  margin: 30px 0 0;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Стиль для элемента, который будет качаться */
+.swing {
+  width: 70px; /* Размер изображения */
+  animation: bellRing 1s ease-in-out infinite;
+}
+
+@keyframes bellRing {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  25% {
+    transform: rotate(15deg) translateY(-5px);
+  }
+  50% {
+    transform: rotate(0deg) translateY(0);
+  }
+  75% {
+    transform: rotate(-15deg) translateY(-5px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}

@@ -1,0 +1,741 @@
+@media (max-width: 1320px) {
+  /* Карусель */
+  .slider__card {
+    margin: 0 19px;
+  }
+  .slider__item {
+    max-width: 1160px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1155px) {
+  /* Карусель */
+  .slider__item {
+    max-width: 1040px;
+  }
+
+  .slider__card {
+    margin: 0 19px;
+    max-width: 300px;
+    height: 545px;
+  }
+
+  .card__btn {
+    padding: 12px;
+  }
+
+  .card__box {
+    margin: 15px 0;
+  }
+
+  .card__text {
+    padding: 6px 14px 6px 24px;
+    margin-right: 20px;
+  }
+
+  .card__text::before {
+    width: 20px;
+    height: 20px;
+    left: 2px;
+  }
+
+  .card__promo {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .card__promo-text {
+    padding: 5px 0 16px;
+  }
+}
+
+@media (max-width: 1110px) {
+  /* Блок 4. Подарки */
+  .tab-item__content,
+  .tab-item__func .tab-item__content,
+  .tab-item .tab-item__content::after,
+  .tab__box-back,
+  .tab__box-back img,
+  .tab__box-front,
+  .tab__box-front img {
+    max-width: 230px;
+  }
+
+  .tab-item__func .tab-item__content,
+  .tab-item__content,
+  .tab__box-back,
+  .tab-item .tab-item__content::after {
+    height: 355px;
+  }
+
+  .tab__box-title {
+    font-size: 24px;
+  }
+
+  .tab__box-text {
+    font-size: 16px;
+    line-height: 110%;
+  }
+
+  .tab__box-back img {
+    height: 135px;
+  }
+
+  .tab__box-back a {
+    font-size: 14px;
+    width: 85%;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 1040px) {
+  /* Карусель */
+  .slider__item {
+    max-width: 990px;
+  }
+
+  .slider__card {
+    margin: 0 8px;
+  }
+
+  /* Блок 3. Розыгрыш  */
+  .lottery__item {
+    width: 300px;
+    height: 300px;
+  }
+
+  .lottery__item img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .lottery__item-minuts {
+    font-size: 34px;
+  }
+
+  .lottery__item-text {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 995px) {
+  /* Карусель */
+  .slider__item {
+    max-width: 680px;
+  }
+
+  /* Блок 4. Подарки */
+  .tab-item__content,
+  .tab-item__func .tab-item__content,
+  .tab-item .tab-item__content::after,
+  .tab__box-back,
+  .tab__box-back img,
+  .tab__box-front,
+  .tab__box-front img {
+    max-width: 200px;
+  }
+
+  .tab-item__func .tab-item__content,
+  .tab-item__content,
+  .tab__box-back,
+  .tab-item .tab-item__content::after {
+    height: 310px;
+  }
+
+  .tab__box-title {
+    font-size: 20px;
+  }
+
+  .tab__box-text {
+    font-size: 14px;
+    line-height: 105%;
+  }
+
+  .tab__box-back img {
+    height: 115px;
+  }
+
+  .tab__box-back a {
+    font-size: 14px;
+    width: 75%;
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 860px) {
+  /* Блок 2. Подборка экспертов */
+  .consultation {
+    padding: 35px 0 60px;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .consultation__ac {
+    font-size: 18px;
+  }
+
+  /* Блок 3. Розыгрыш  */
+  .lottery {
+    padding: 35px 0;
+  }
+
+  .lottery__info {
+    max-width: 66%;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .lottery__info p,
+  .referral__inner p {
+    font-size: 18px;
+    line-height: 136%;
+  }
+
+  .lottery__btn,
+  .referral__btn {
+    font-size: 17px;
+  }
+
+  .lottery__item {
+    width: 220px;
+    height: 220px;
+  }
+
+  .lottery__item img {
+    width: 85px;
+    height: 60px;
+  }
+
+  .lottery__item-minuts {
+    font-size: 24px;
+  }
+
+  .lottery__item-text {
+    font-size: 18px;
+  }
+
+  /* Блок 4. Подарки */
+  .present {
+    padding: 35px 0 45px;
+  }
+
+  .present__inner {
+    margin-bottom: 30px;
+  }
+
+  .tab-item.active-tab {
+    justify-content: space-around;
+  }
+
+  .tabs,
+  .tab.active,
+  .tabs span {
+    font-size: 16px;
+    height: 40px;
+  }
+  .tabs {
+    margin-bottom: 35px;
+  }
+
+  .tab-item__content,
+  .tab-item__func .tab-item__content,
+  .tab-item .tab-item__content::after,
+  .tab__box-back,
+  .tab__box-back img,
+  .tab__box-front,
+  .tab__box-front img {
+    max-width: 150px;
+  }
+
+  .tab-item__func .tab-item__content,
+  .tab-item__content,
+  .tab__box-back,
+  .tab-item .tab-item__content::after {
+    height: 230px;
+  }
+
+  .tab__box-title {
+    font-size: 16px;
+  }
+
+  .tab__box-text {
+    font-size: 10px;
+    line-height: 105%;
+  }
+
+  .tab__box-back img {
+    height: 90px;
+  }
+
+  .tab__box-back a {
+    font-size: 12px;
+    width: 95%;
+    padding: 6px 0;
+  }
+}
+
+@media (max-width: 690px) {
+  /* Блок 1. Баннер статический */
+  .banner {
+    height: 60vh;
+  }
+
+  .banner__inner {
+    padding-top: 40px;
+  }
+
+  h1,
+  .banner-title p {
+    font-size: 44px;
+  }
+
+  .banner__text {
+    font-size: 20px;
+  }
+
+  .consultation::before {
+    background: linear-gradient(360deg, #fff 0%, #dbdcca 97%);
+  }
+  .consultation::after {
+    background: linear-gradient(180deg, #fff 35%, #dbdcca 90%);
+  }
+}
+
+@media (max-width: 676px) {
+  /* Карусель */
+  .slider {
+    padding-top: 10px;
+  }
+
+  .slider__item {
+    max-width: 390px;
+    padding: 0px 60px;
+  }
+  .slider__card {
+    max-width: 270px;
+    height: 520px;
+  }
+
+  .slider::before {
+    max-width: 530px;
+  }
+
+  /* Блок 4. Подарки */
+  .present__inner {
+    margin-bottom: 15px;
+  }
+  .tabs {
+    height: 54px;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 24px;
+  }
+  .tabs,
+  .tab.active,
+  .tabs span {
+    font-size: 14px;
+    height: 135px;
+  }
+
+  .tab-item.active-tab {
+    flex-wrap: wrap;
+    gap: 45px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  .tab__content {
+    margin-top: 30px;
+  }
+
+  /* Блок 5. Соцсети */
+  .social,
+  .referral {
+    padding: 35px 0;
+  }
+
+  .social__box {
+    margin-top: 20px;
+  }
+
+  .social__telegram,
+  .social__login {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 630px) {
+  /* Блок 2. Подборка экспертов */
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 130%;
+  }
+
+  .consultation__ac {
+    font-size: 16px;
+  }
+  /* Блок 3. Розыгрыш  */
+  .lottery__info {
+    max-width: 60%;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .lottery__info p,
+  .referral__inner p {
+    font-size: 14px;
+    line-height: 130%;
+  }
+
+  .lottery__item img {
+    width: 60px;
+    height: 45px;
+  }
+
+  .lottery__item-minuts {
+    font-size: 20px;
+  }
+
+  .lottery__item-text {
+    font-size: 16px;
+  }
+
+  .lottery__item {
+    width: 175px;
+    height: 175px;
+    margin-bottom: auto;
+  }
+
+  .lottery__mas {
+    font-size: 16px;
+    margin-bottom: 34px;
+  }
+
+  .lottery__btn,
+  .referral__btn {
+    width: 70%;
+  }
+  .consultation::before {
+    background: linear-gradient(360deg, #fff 32%, #dbdcca 97%);
+  }
+}
+
+@media (max-width: 545px) {
+  /* Блок 1. Баннер статический */
+  .banner {
+    height: 50vh;
+  }
+
+  .banner__inner {
+    padding-top: 30px;
+  }
+
+  h1,
+  .banner-title p {
+    font-size: 32px;
+  }
+
+  .banner__text {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  .swing {
+    width: 52px;
+  }
+
+  label {
+    width: 105px;
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 55%;
+    padding: 6px;
+  }
+
+  .modal-content {
+    max-width: 450px;
+  }
+
+  .form-container {
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .form__line {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Блок 2. Подборка экспертов */
+  .consultation {
+    padding: 25px 0 40px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    line-height: 120%;
+  }
+
+  /* Карусель */
+  .slider__item {
+    max-width: 240px;
+    padding: 0px 25px;
+  }
+
+  .slider__card {
+    max-width: 190px;
+    height: 340px;
+    margin: 0 19px;
+  }
+
+  .card__btn {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .card__promo-text {
+    font-size: 10px;
+    padding: 5px 0 9px;
+  }
+
+  .card__promo {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .card__title {
+    font-size: 14px;
+  }
+  .card__box {
+    margin: 6px 0;
+    gap: 2px;
+  }
+
+  .card__text {
+    font-size: 8px;
+    padding: 3px 10px 3px 20px;
+    margin-right: 20px;
+  }
+
+  .card__text::before {
+    width: 15px;
+    height: 15px;
+  }
+
+  /* Блок 3. Розыгрыш  */
+  .lottery {
+    padding: 25px 0;
+  }
+
+  .lottery__inner {
+    position: relative;
+  }
+
+  .lottery__info {
+    max-width: 100%;
+  }
+
+  .lottery__item {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+  }
+
+  .lottery__item img {
+    width: 30px;
+    height: 25px;
+  }
+
+  .lottery__item-minuts {
+    font-size: 14px;
+  }
+
+  .lottery__item-text {
+    font-size: 12px;
+  }
+
+  .lottery__info p span {
+    font-size: 16px;
+  }
+
+  .lottery__item {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+
+  .lottery__mas {
+    font-size: 12px;
+    margin-bottom: 23px;
+  }
+
+  .lottery__btn,
+  .referral__btn {
+    font-size: 14px;
+    padding: 5px;
+    width: 50%;
+    display: block;
+  }
+
+  /* Блок 4. Подарки */
+  .tabs {
+    width: 50%;
+  }
+
+  .tab-item.active-tab {
+    gap: 15px;
+    width: 95%;
+  }
+
+  /* Блок 5. Соцсети */
+  .social__telegram,
+  .social__login {
+    font-size: 14px;
+  }
+  /* Блок 6. Рефералка */
+  h3 {
+    font-size: 20px;
+  }
+  .consultation::before {
+    background: linear-gradient(360deg, #fff 69%, #dbdcca 101%);
+    height: 296px;
+  }
+
+  .modal-content {
+    max-width: 310px;
+  }
+
+  h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .swing {
+    width: 42px;
+  }
+
+  .form__item {
+    margin-bottom: 10px;
+  }
+
+  label {
+    width: 92px;
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="email"] {
+    width: 65%;
+    margin-left: 4px;
+  }
+
+  button {
+    width: 140px;
+    height: 34px;
+    margin: 20px 0 0;
+  }
+
+  .form__line + .form__line {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Блок 1. Баннер статический */
+  .banner {
+    height: 40vh;
+  }
+
+  h1,
+  .banner-title p {
+    font-size: 22px;
+  }
+
+  h1 {
+    background: linear-gradient(
+      0deg,
+      #cbd088,
+      #78cafd,
+      #e199a8,
+      #fee7a8,
+      #fcfcec,
+      #fcfcec
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .banner-title {
+    margin-bottom: 16px;
+  }
+
+  .banner__text {
+    font-size: 14px;
+    line-height: 112%;
+  }
+}
+
+@media (max-width: 365px) {
+  /* Блок 2. Подборка экспертов */
+  h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 110%;
+  }
+
+  .consultation__ac {
+    font-size: 12px;
+  }
+  /* Блок 4. Подарки */
+  .tabs,
+  .tab.active,
+  .tabs span {
+    font-size: 12px;
+    height: 130px;
+  }
+
+  /* Блок 5. Соцсети */
+  .social__telegram,
+  .social__login {
+    padding: 6px 0;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}
